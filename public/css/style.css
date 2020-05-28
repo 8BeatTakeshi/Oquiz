@@ -1,0 +1,160 @@
+/* *********************** Annimation des Dauphins ******************** */
+@keyframes dauphin {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 180px);
+    }
+}
+
+.dauphin {
+    height: 150px;
+    width: 230px;
+    position: fixed;
+    top: 60%;
+    animation-timing-function: ease-in;
+    animation-name: dauphin;
+    animation-duration: 6.5s;
+    animation-iteration-count: infinite;
+}
+
+#dauphin2 {
+    top: 0%;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+}
+
+#dauphin3 {
+    top: 20%;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+}
+
+#dauphin4 {
+    top: 40%;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    animation-duration: 7s;
+}
+
+#dauphin5 {
+    top: 80%;
+    animation-duration: 8s;
+}
+
+/* *********************** Mise en forme du Curseur  ******************** */
+.curseur_img {
+    cursor:url('img/dauphinbackgroundjeanetdario.png'), default;
+}
+
+/* *********************** Navigation et header ******************** */
+.nav-item {
+    background-image: url("img/cloud.png");
+    background-size: contain;
+    font-size: 3em;
+}
+
+.nav-item a {
+    color: red;
+}
+
+h1 {
+    background-image: url("img/cloud.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    padding-top: 45px;
+    font-size: 4em;
+}
+
+/* *********************** Corp de la page ******************** */
+.container {
+    height: 100vh;
+    background-image: url("img/cartoonBeach.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card {
+    width: 29%;
+    height: auto;
+    background-image: url("img/dauphinbackgroundjeanetdario.png");
+}
+
+
+
+.questions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.question {
+    width: 29%;
+    border: 3px solid orange;
+    padding: 1em;
+    background-image: url("img/dauphinbackgroundjeanetdario.png");
+}
+
+#validerQuiz {
+    width: 100%;
+    height: 200px;
+    background-image: url("img/dauphinbackgroundjeanetdario.png");
+    color: black;
+    font-weight: bolder;
+    font-size: 5em;
+}
+
+#validerQuiz:hover {
+    transform: scale(1.2, 1.2);
+    background-color: aqua;
+    border: thick double blue;
+}
+
+#thematique {
+    width: 100%;
+    height: 75px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    background-image: url("img/dauphinbackgroundjeanetdario.png");
+}
+
+#thematique:hover {
+    transform: scale(1.1)
+}
+
+
+/* *********************** difficulté des questions ******************** */
+.level {
+    font-size: 0.8em;
+}
+
+.level--1 {
+    border-color: lightgreen;
+}
+
+.level--2 {
+    border-color: yellow;
+}
+
+.level--3 {
+    border-color: red;
+}
+
+
+/* *********************** Music ******************** */
+iframe {
+    display: none;
+}
+
+/* *****************Résultats questions************** */
+
+.green {
+    border: solid 10px green;
+}
+
+.red {
+    border: solid 10px red;
+}
